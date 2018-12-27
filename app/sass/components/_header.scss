@@ -1,0 +1,42 @@
+// ======================================================================================
+// Header
+// ======================================================================================
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header-strip {
+    height: 2.2rem;
+    background: $brand-color-black;
+}
+
+.header-content {
+    padding: 0 2rem;
+    background: $brand-gradient-yellow;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        display: block;
+        padding: 1.2rem 0;
+    }
+
+    .avatar {
+        margin-left: auto;
+    }
+}
+
+// ======================================================================================
+// Media
+// ======================================================================================
+
+@include media-breakpoint-down(sm) {
+    .header-content {
+        padding: 0 0.5rem;
+    }
+
+    .header-logo .logo img {
+        width: 9rem;
+    }
+}

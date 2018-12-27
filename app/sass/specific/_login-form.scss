@@ -1,0 +1,77 @@
+// ======================================================================================
+// Login form
+// ======================================================================================
+
+.login-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.login-form {
+    width: 25rem;
+    background-color: #fff;
+    border: 1px solid #eaedf3;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+    padding: 0 4.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form-header {
+    margin-bottom: 2rem;
+}
+
+.login-form-controls {
+    margin-top: 2rem;
+    display: flex;
+
+    .btn {
+        margin-left: auto;
+    }
+}
+
+// ======================================================================================
+// Media
+// ======================================================================================
+
+@include media-breakpoint-down(lg) {
+    .login-form {
+        min-height: 30rem;
+    }
+
+    .login-form-right {
+        display: none;
+    }
+}
+
+@media (max-width: 418px) {
+    .login-page {
+        display: block;
+        height: 100%;
+    }
+
+    .login-form-wrap {
+        width: 100%;
+        height: 100%;
+        border: none;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .login-form {
+        width: 100%;
+        height: 100%;
+        border: none;
+        box-shadow: none;
+        margin: 0;
+    }
+}

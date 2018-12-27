@@ -1,0 +1,22 @@
+// ======================================================================================
+// Base styles
+// Styles that affect the entire application
+// ======================================================================================
+
+body {
+    background: $brand-color-gray;
+    font-family: $font-family-primary;
+    color: $brand-color-black;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    font-size: $font-size-base;
+}
+
+h1 { font-size: modular-scale(4, $font-size-base); }
+h2 { font-size: modular-scale(3, $font-size-base); }
+h3 { font-size: modular-scale(2, $font-size-base); }
+h4 { font-size: modular-scale(1, $font-size-base); }
+h5 { font-size: modular-scale(0, $font-size-base); }
+h6 { font-size: modular-scale(0, $font-size-base); }

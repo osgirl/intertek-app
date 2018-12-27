@@ -1,0 +1,52 @@
+// ======================================================================================
+// Tag
+// ======================================================================================
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: $brand-color-blue;
+    padding: 3px 1rem;
+    margin: 0 0.5rem 0.5rem 0;
+
+    span {
+        color: #fff;
+        font-weight: 600;
+        margin-right: 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    .btn-icon-primary {
+        color: #fff;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+// ======================================================================================
+// Media
+// ======================================================================================
+
+@include media-breakpoint-down(sm) {
+    .tag {
+        padding: 1px 7px;
+
+        span {
+            font-size: 0.8125rem;
+            font-weight: 400;
+        }
+
+        .btn-icon-primary {
+            font-size: 0.875rem;
+        }
+    }
+}

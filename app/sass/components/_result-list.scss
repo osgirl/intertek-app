@@ -1,0 +1,194 @@
+// ======================================================================================
+// Result list
+// ======================================================================================
+
+.result-list-item {
+    background: #fff;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+    border: 1px solid #EAEDF3;
+    border-left: 4px solid $brand-color-yellow;
+}
+
+.result-list-item-content {
+    display: flex;
+    padding: 1.7rem 1.75rem 2rem 1.75rem;
+}
+
+.result-list-item-center {
+    display: flex;
+
+    .result-list-item-section {
+        flex-grow: 1;
+    }
+}
+
+.result-list-item-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:first-child {
+        padding: 0 1.75rem 0 0 !important;
+    }
+
+    &:not(:first-child) {
+        padding: 0 !important;
+    }
+
+    > span {
+        display: block;
+        font-weight: 600;
+    }
+
+    small {
+        color: #818ea7;
+        font-weight: 400;
+        margin-top: 2px;
+        line-height: 1;
+    }
+
+    .link {
+        color: $brand-color-blue;
+        font-weight: 400;
+        margin-top: 2px;
+        font-size: 80%;
+        text-transform: none;
+        padding: 0;
+        line-height: 1;
+        display: block;
+        text-align: left;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.result-list-item-controls {
+    margin-left: auto;
+}
+
+.result-list-item-table {
+    .table {
+        margin-bottom: 0.2rem;
+    }
+
+    .table tbody td {
+        font-size: 0.875rem;
+        vertical-align: middle;
+    }
+
+    .table thead th {
+        color: #fff;
+        background: rgba($brand-color-gray-dark, 0.9);
+        border: none;
+    }
+
+    .table tbody tr:first-child td {
+        border-top: none;
+    }
+
+    .table tr th:first-child,
+    .table tr td:first-child {
+        padding-left: 1.75rem;
+    }
+
+    .table tr th:last-child,
+    .table tr td:last-child {
+        padding-right: 1.75rem;
+    }
+}
+
+.result-list-pagination {
+    margin-top: 0rem;
+
+    .pagination {
+        justify-content: center;
+    }
+}
+
+.result-list-item-footer {
+    display: none;
+
+    .btn {
+        width: 100%;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: none !important;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border-top: 1px solid #ced0da !important;
+            border-left: none !important;
+            border-right: none !important;
+            border-bottom: none !important;
+        }
+    }
+}
+
+
+// ======================================================================================
+// Media
+// ======================================================================================
+
+@include media-breakpoint-down(md) {
+    .result-list-item-center {
+        display: block;
+
+        .result-list-item-section {
+            width: 100%;
+        }
+
+        .result-list-item-section:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .result-list-item-section:last-child .result-list-item-controls {
+        margin: auto;
+    }
+
+    .result-list-item-table {
+        .table tr td:first-child,
+        .table tr th:first-child {
+            display: none;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .result-list-item-content {
+        padding: 1rem;
+    }
+
+    .result-list-item-center {
+        padding: 0;
+    }
+
+    .result-list-item-section > span {
+        font-weight: 400;
+        font-size: 0.875rem;
+    }
+
+    .result-list-item-section:first-child {
+        padding: 0 1rem 0 0 !important;
+    }
+
+    .result-list-item-table .table {
+        tr th {
+            padding: 0.3rem !important;
+            font-size: 0.875rem;
+        }
+
+        tr td {
+            padding: 0.3rem !important;
+            font-size: 0.8125rem;
+        }
+    }
+
+    .result-list-item-footer {
+        display: block;
+    }
+}

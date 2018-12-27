@@ -1,0 +1,171 @@
+// ======================================================================================
+// General
+// ======================================================================================
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+
+    label {
+        font-size: 0.8125rem;
+        color: #818ea7;
+        margin: 0 0 5px 0;
+
+        &.label-uppercase {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    label:not(.col-form-label) {
+        line-height: 1;
+    }
+
+    label.strong {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    &.has-icon {
+        position: relative;
+        .form-control { padding-right: 2.25rem; }
+    }
+
+    .is-valid-icon,
+    .is-invalid-icon,
+    .is-loading-icon {
+        position: absolute;
+        top: 2rem;
+        right: 0.75rem;
+    }
+
+    &.it-has-no-label .is-valid-icon,
+    &.it-has-no-label .is-invalid-icon {
+        top: 0.655rem;
+    }
+
+    .is-valid-icon {
+        color: $color-green-light;
+    }
+
+    .is-invalid-icon {
+        color: $color-red-light;
+    }
+
+    .is-loading-icon {
+        color: $color-gray-dark;
+    }
+
+    .invalid-feedback {
+        color: $color-red-light;
+        margin-top: 2px;
+    }
+
+    .alert {
+        margin-top: 0.5rem;
+    }
+}
+
+.form-group-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+}
+
+.form-group-button-row {
+    display: flex;
+    align-items: center;
+    margin: 0.75rem 0 1rem 0;
+
+    .btn { margin-right: 0.75rem; }
+    .btn:last-child { margin-right: 0; }
+}
+
+
+// ======================================================================================
+// Editable forms
+// ======================================================================================
+
+.form-control {
+    color: $brand-color-black;
+    border-color: #ced0da;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+
+    &:not(.is-invalid):not(.is-valid):focus {
+        border-color: $color-blue-light;
+    }
+
+    &.is-valid:focus {
+        border-color: $color-green-light;
+    }
+
+    &.is-invalid:focus {
+        border-color: $color-red-light;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+        border-color: $brand-color-blue !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+    &:disabled,
+    &[readonly] {
+        color: $color-gray-dark;
+        background-color: #fcfdff;
+    }
+}
+
+.form-check-input {
+    margin-right: 1rem;
+}
+
+// ======================================================================================
+// Checkboxes
+// ======================================================================================
+
+.custom-control {
+    padding-left: 1.8rem;
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.custom-control-label {
+    display: flex;
+    align-items: center;
+}
+
+.custom-control-label::before,
+.custom-control-label::after {
+    left: -1.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.custom-checkbox .custom-control-input ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $brand-color-blue;
+}
+

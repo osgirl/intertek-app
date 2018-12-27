@@ -1,0 +1,51 @@
+// ======================================================================================
+// Avatar
+// ======================================================================================
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-icon {
+    background-color: transparent;
+    border: 3px solid $brand-color-black;
+    width: 3.1em;
+    height: 3.1em;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg.svg-inline--fa {
+        font-size: 1.4rem;
+        fill: $brand-color-black;
+        color: $brand-color-black;
+    }
+}
+
+.avatar-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $brand-color-black;
+    display: block;
+    user-select: none;
+    line-height: 1;
+    margin-bottom: 3px;
+}
+
+.avatar-controls .btn {
+    font-weight: 600;
+    user-select: none;
+    color: $brand-color-black;
+    display: block;
+    line-height: 1;
+    padding: 0;
+    text-decoration: underline;
+
+    &:hover {
+        color: $brand-color-blue;
+    }
+}

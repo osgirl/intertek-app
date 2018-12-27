@@ -1,0 +1,23 @@
+// ======================================================================================
+// Footer
+// ======================================================================================
+
+.footer {
+    margin-top: 6rem;
+}
+
+.footer-strip {
+    height: 2.2rem;
+    background: $brand-color-gray-dark;
+}
+
+.footer-content {
+    padding: 2rem;
+    background: $brand-color-black;
+    display: flex;
+    align-items: center;
+
+    .footer-content-right {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,63 @@
+// ======================================================================================
+// Badges
+// ======================================================================================
+
+.badge {
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid transparent;
+}
+
+.badge.badge-green {
+    border-color: $color-green-light;
+}
+
+.badge.badge-black {
+    border-color: $brand-color-gray-dark;
+}
+
+.badge.badge-blue {
+    border-color: $brand-color-blue;
+}
+
+.badge.badge-red {
+    border-color: $color-red-base;
+}
+
+.badge-wrap {
+    display: flex;
+    align-items: center;
+
+    .badge, .badge-icon {
+        margin-right: 0.5rem;
+    }
+
+    span {
+        white-space: nowrap;
+    }
+}
+
+
+// ======================================================================================
+// Badge icon
+// ======================================================================================
+
+.badge-icon {
+    font-size: 0.9rem;
+}
+
+.badge-icon.badge-icon-green {
+    color: $color-green-light;
+}
+
+.badge-icon.badge-icon-black {
+    color: $brand-color-gray-dark;
+}
+
+.badge-icon.badge-icon-blue {
+    color: $brand-color-blue;
+}

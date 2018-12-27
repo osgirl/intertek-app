@@ -1,0 +1,41 @@
+// ======================================================================================
+// Variables
+// App application variables should be declared here
+// ======================================================================================
+
+// Colors
+//
+$brand-color-gray: #f8f8f8;
+$brand-color-gray-dark: #3c3d45;
+$brand-color-yellow: rgb(252, 175, 23);
+$brand-color-blue: #21b6d7;
+$brand-color-black: #222;
+$brand-gradient-yellow: linear-gradient(171deg, rgb(255, 199, 0) 0%, rgb(255, 194, 14) 70%, rgb(252, 175, 23) 100%);
+
+$color-gray-base: #e6eaee;
+$color-gray-light: #f7f8f9;
+$color-gray-dark: #b5b5b5;
+
+$color-blue-base: #1a84d3;
+$color-blue-light: #2399f1;
+$color-blue-dark: #1270b5;
+
+$color-green-base: #1e9d09;
+$color-green-light: #24b00d;
+$color-green-dark: #1a740b;
+
+$color-red-light: #ed1c24;
+$color-red-base: darken($color-red-light, 5%);
+$color-red-dark: darken($color-red-light, 10%);
+
+// Fonts
+//
+$font-size-base: 1rem;
+$font-family-base: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+$font-family-primary: 'Titillium Web', $font-family-base;
+
+// Base sizes
+//
+$line-height: 1.8;
+$modular-scale-ratio: 1.5;
+$leading: $font-size-base * $line-height;
