@@ -52,7 +52,7 @@ This will install all the dependencies. Then after that run:
 ```
 
 This will start the server in development mode. You will be able to access
-the application on localhost:8080. The application was testet in latest
+the application on localhost:8080. The application was tested in latest
 desktop and android chrome web browsers.
 
 ### Features

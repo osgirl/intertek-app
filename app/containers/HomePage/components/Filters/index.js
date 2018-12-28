@@ -50,7 +50,12 @@ class Filters extends Component {
             .filter((key) => key !== 'sections')
             .map((key) => ({ key, value: isArray(state[key]) ? state[key].join(',') : state[key] }))
             .filter((item) => !isNullOrWs(item.value))
-            .reduce((mem, item) => ({ ...mem, [item.key]: item.value }), { page: 1 });
+            .reduce((mem, item) => ({ ...mem, [item.key]: item.value }), {});
+
+        if (!isNullOrWs(urlParams.page))
+            filters.page = urlParams.page;
+        if (!isNullOrWs(urlParams.orderBy))
+            filters.orderBy = urlParams.orderBy;
 
         const oldUrl = `${urlBase}${isNullOrEmpty(urlParams) ? '' : '?'}${stringify(urlParams)}`;
         const newUrl = `${urlBase}${isNullOrEmpty(filters) ? '' : '?'}${stringify(filters)}`;
